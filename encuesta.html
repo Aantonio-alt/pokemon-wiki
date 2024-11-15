@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/encuestamain.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo de la pagina"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opciones
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=NFTemk99fLU&list=RDQMrNNOUZI3uY0&start_radio=1">Music</a></li>
+                <li><a class="dropdown-item" href="https://www.nintendo.com/es-es/">Nintendo Oficial</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://alphacoders.com/pokemon-wallpapers">Wallpapers</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="encuesta_centro">
+      <section class="encuesta">
+
+        <h2>Encuesta Pokemon <span class="badge text-bg-secondary">New</span></h2>
+
+        <form>
+
+        <div class="form__group">
+          <label for="nombre">¿Cuál es tu nombre de entrenador?</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form__group">
+          <label>¿Cuál es tu tipo de Pokémon favorito?</label>
+          <select name="tipo-favorito" required>
+              <option value="">Selecciona uno</option>
+              <option value="agua">Agua</option>
+              <option value="fuego">Fuego</option>
+              <option value="planta">Planta</option>
+              <option value="eléctrico">Eléctrico</option>
+              <option value="psíquico">Psíquico</option>
+              <option value="roca">Roca</option>
+              <option value="hielo">Hielo</option>
+          </select>
+        </div>
+          <div class="form__group">
+            <label>¿Qué regiones de Pokémon conoces? (Selecciona todas las que conozcas)</label>
+          </div>
+
+          <div class="regiones">
+            <input type="checkbox" id="kanto" name="regiones[]" value="kanto">
+            <label for="kanto">Kanto</label><br>
+            <input type="checkbox" id="johto" name="regiones[]" value="johto">
+            <label for="johto">Johto</label><br>
+            <input type="checkbox" id="hoenn" name="regiones[]" value="hoenn">
+            <label for="hoenn">Hoenn</label><br>
+            <input type="checkbox" id="sinnoh" name="regiones[]" value="sinnoh">
+            <label for="sinnoh">Sinnoh</label><br>
+            <input type="checkbox" id="galar" name="regiones[]" value="galar">
+            <label for="galar">Galar</label><br>
+        </div>
+
+        <div class="form__group">
+          <label>¿Cuánto te gustan las batallas Pokémon?</label>
+        </div>
+
+        <div class="batalla">
+          <input type="radio" id="batalla1" name="gusto-batallas" value="1" required>
+          <label for="batalla1">1 (Poco)</label><br>
+          <input type="radio" id="batalla2" name="gusto-batallas" value="2">
+          <label for="batalla2">2</label><br>
+          <input type="radio" id="batalla3" name="gusto-batallas" value="3">
+          <label for="batalla3">3</label><br>
+          <input type="radio" id="batalla4" name="gusto-batallas" value="4">
+          <label for="batalla4">4</label><br>
+          <input type="radio" id="batalla5" name="gusto-batallas" value="5">
+          <label for="batalla5">5 (Mucho)</label>
+      </div>
+        
+      <div class="form__group">
+        <label>¿Prefieres jugar Pokémon en qué tipo de plataforma?</label>
+        <select name="plataforma-preferida" required>
+            <option value="">Selecciona una opción</option>
+            <option value="consola">Consola (Nintendo Switch, Game Boy, etc.)</option>
+            <option value="movil">Móvil</option>
+            <option value="pc">PC</option>
+        </select>
+      </div>
+
+      <button class="enviar" type="submit">Enviar Encuesta</button>
+
+    </form>
+
+      </section>
+  </div>
+
+
+
+  </main>
+
+
+  <footer>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="encuesta.html">2</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $background-color;
+}
+
+
+header{
+    @include flex-center;
+    background-color: $primary-color;
+    padding: 1.5rem;
+
+    img{
+        width: 10rem;
+        height: auto;
+        cursor: pointer;
+        padding: .3rem .5rem;
+    }
+    .navbar{
+        border-radius: 20px;
+    }
+    .collapse{
+        gap: 2rem;
+    }
+}
+
+.encuesta_centro{
+    @include flex-center;
+}
+.encuesta{
+    @include flex-center;
+    flex-direction: column;
+    background-color: #fff0d0;
+    padding: 3rem 9rem;
+    border-radius: 20px;
+    text-align: start;
+    margin: 2rem;
+
+    h2{
+        font-size: 2rem;
+        color: $text-color;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .regiones{
+        padding-left: 2rem;
+    }
+    .batalla{
+        @include flex-center;
+        gap: 1rem;
+    }
+}
+
+.form__group {
+    text-align: left;
+    
+
+    label {
+        font-weight: bold;
+        color: $text-color;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"], textarea, select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        transition: border-color 0.2s;
+    }
+
+}
+
+
+button[type="submit"] {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: $secondary-color;
+    color: $background-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}

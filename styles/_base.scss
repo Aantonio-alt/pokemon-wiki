@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+header{
+    @include  flex-center;
+    background-color: $primary-color;
+    padding: 1.5rem;
+
+    img{
+        width: 10rem;
+        cursor: pointer;
+        padding: .5rem;
+    }
+    .navbar{
+        border-radius: 20px;
+    }
+    .collapse{
+        gap: 2rem;
+    }
+
+}
+
+main{
+    padding: 1rem 3rem;
+
+    h1{
+        @include flex-center;
+        color: $secondary-color;
+        font-weight: 700;
+        font-size: 3rem;
+        padding: 1rem;
+        background-color: $primary-color;
+        border-radius: 10px;
+
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 2rem 2rem 3rem 2rem;
+        margin: 0;
+        color: $text-color;
+        text-align: justify;
+    }
+}
+.pokemones{
+    padding: 2rem 4rem;
+}
+
+.main__tarjetas {
+    @include flex-center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+
+    
+}
+.card{
+    padding: .5rem;
+    margin: .5rem;
+    max-width: 18rem;
+    background-color: $primary-color;
+    cursor: pointer;
+        
+    &:hover {
+        transform: scale(1.04);
+        transition: transform 0.1s ease-in-out;
+    }
+    
+    h5{
+        @include flex-center;
+        font-weight: 700;
+        color: $text-color;
+        padding: .5rem 0;
+        background-color: $background-color;
+        border-radius: 10px;
+    }
+    img{
+        border-radius: 15px;
+    }
+    h6{
+        font-size: 1rem;
+        font-weight: 400;
+        padding: .3rem;
+        text-align: center;
+    }
+}
+
+.list__description{
+    padding: 4rem;
+
+    h4{
+        padding: 1rem  ;
+        font-weight: 800;
+        color: $secondary-color;
+        @include flex-center;
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+.list-group-item.active{
+    background-color: $primary-color;
+    border-color: #ffffff;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 19rem; 
+    overflow-y: auto;
+}
+  
+.col-8{
+    max-height: 21rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: $primary-color;
+    border-radius: 10px;
+}
+.pokemones__evo{
+    padding: 0 4rem 0rem 4rem;
+}
+.pokemones__info{
+    padding:  4rem
+}
+
+.dato__curioso{
+    @include flex-center;
+}
+
+.btn-primary, .btn {
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: $primary-color;
+    border-color: transparent;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+}
+.dato__curioso__desple{
+    @include flex-center;
+}
+.card__dos{
+    margin: 0rem;
+    max-width: 35rem;
+    background-color: $primary-color;
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 20px;
+    color: $text-color;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+
+.carousel{
+    padding:  0 3rem;
+}
+
+.accordion{
+    padding: 0 5rem 5rem 5rem;
+}
+.accordion-button{
+    background-color: $primary-color;
+}
+
+
+.pagination{
+    @include flex-center;
+    padding-bottom: 5rem;
+}
+
+button[type="submit"] {
+    background-color:$primary-color;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: $primary-color;
+}
